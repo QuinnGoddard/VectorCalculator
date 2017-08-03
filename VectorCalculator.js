@@ -1,5 +1,9 @@
 
 function calculate(element) {
   var text = element.previousElementSibling.value;
-  document.getElementById("output").innerHTML = text;
+  var newText = "";
+  for (var line of text.split(",")) {
+      newText += "<div>" + line + "</div>";
+  }
+  document.getElementById("output").innerHTML = newText;
 }
