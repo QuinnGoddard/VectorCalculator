@@ -1,4 +1,5 @@
 
 function calculate(element) {
-  alert(element.previousElementSibling);
+  var text = element.previousElementSibling.value;
+  document.getElementByID("output").innerHTML = text;
 }
