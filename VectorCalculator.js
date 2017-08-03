@@ -1,4 +1,4 @@
 
 function calculate(element) {
-  alert(element);
+  alert(element.previousElementSibling);
 }
